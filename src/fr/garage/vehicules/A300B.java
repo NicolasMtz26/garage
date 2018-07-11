@@ -7,17 +7,13 @@ import fr.garage.Vehicule;
 import java.util.ArrayList;
 
 public class A300B extends Vehicule {
-    private Marque marque;
-    private String modele;
-    private double price;
-    private ArrayList<OptionVehicule> options;
 
 
     public A300B() {
         super();
-        setMarque(marque);
-        setModele(modele);
-        setPrice(price);
+        setMarque(Marque.PIGEOT);
+        setModele("A300B");
+        setPrice(10);
     }
 //
 //    public A300B(Marque marque, String modele, double price) {

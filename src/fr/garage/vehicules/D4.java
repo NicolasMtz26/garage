@@ -7,17 +7,11 @@ import fr.garage.Vehicule;
 import java.util.ArrayList;
 
 public class D4 extends Vehicule {
-    private Marque marque;
-    private String modele;
-    private double price;
-    private ArrayList<OptionVehicule> options;
-
-
     public D4() {
         super();
-        setMarque(marque);
-        setModele(modele);
-        setPrice(price);
+        setMarque(Marque.TROEN);
+        setModele("D4");
+        setPrice(10);
     }
 
 //

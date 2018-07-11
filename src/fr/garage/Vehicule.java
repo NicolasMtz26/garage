@@ -7,13 +7,9 @@ public class Vehicule {
     private Marque marque;
     private String modele;
     private double price;
-    private ArrayList<OptionVehicule> options;
+    private ArrayList<OptionVehicule> options = new ArrayList<OptionVehicule>();
 
     public Vehicule() {
-        this.marque = marque;
-        this.modele = modele;
-        this.price = price;
-        this.options = options;
     }
 
     public Marque getMarque() {
@@ -46,6 +42,10 @@ public class Vehicule {
 
     public void setOptions(ArrayList<OptionVehicule> options) {
         this.options = options;
+    }
+
+    public void addOption(OptionVehicule option){
+        options.add(option);
     }
 
     @Override

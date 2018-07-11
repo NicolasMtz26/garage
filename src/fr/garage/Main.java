@@ -1,6 +1,7 @@
 package fr.garage;
 
 import fr.garage.*;
+import fr.garage.options.*;
 import fr.garage.vehicules.*;
 
 public class Main {
@@ -10,9 +11,9 @@ public class Main {
    	 
    	 Vehicule lag1 = new Lagouna();
 //   	 lag1.setMoteur(new MoteurEssence("150 Chevaux", 10256d));
-//   	 lag1.addOption(new GPS());
-//   	 lag1.addOption(new SiegeChauffant());
-//   	 lag1.addOption(new VitreElectrique());
+   	 lag1.addOption(new GPS());
+   	 lag1.addOption(new SiegeChauffant());
+   	 lag1.addOption(new VitreElectrique());
    	 garage.addVoiture(lag1);
    		 
    	 Vehicule A300B_2 = new A300B();
