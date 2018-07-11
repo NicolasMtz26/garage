@@ -1,13 +1,17 @@
-package fr.garage;
+package fr.garage.vehicules;
+
+import fr.garage.moteur.Moteur;
+import fr.garage.options.OptionVehicule;
 
 import java.util.ArrayList;
 
-public class Vehicule {
+public abstract class Vehicule {
 
     private Marque marque;
     private String modele;
     private double price;
     private ArrayList<OptionVehicule> options = new ArrayList<OptionVehicule>();
+    private Moteur moteur;
 
     public Vehicule() {
     }
@@ -47,6 +51,12 @@ public class Vehicule {
     public void addOption(OptionVehicule option){
         options.add(option);
     }
+
+    public void setMoteur(Moteur moteur){
+        this.moteur = moteur;
+    }
+
+    public abstract String klaxon();
 
     @Override
     public String toString() {

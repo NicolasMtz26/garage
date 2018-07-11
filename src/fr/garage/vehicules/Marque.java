@@ -1,4 +1,4 @@
-package fr.garage;
+package fr.garage.vehicules;
 
 public enum Marque {
 

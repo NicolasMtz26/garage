@@ -1,5 +1,8 @@
 package fr.garage;
 
+import fr.garage.options.OptionVehicule;
+import fr.garage.vehicules.Vehicule;
+
 import java.util.ArrayList;
 
 public class Garage {
@@ -16,8 +19,19 @@ public class Garage {
 
     @Override
     public String toString() {
-        return "Garage{" +
+        return "Garage :\n\t" +
                 "voitures=" + voitures +
                 '}';
+    }
+
+    public void getInfo(){
+        for (Vehicule vehicule: voitures
+             ) {
+            System.out.println(vehicule.getMarque() +"\n\t" + vehicule.getModele() + "\n\t" + vehicule.getPrice() + "€ \n\t");
+            for (OptionVehicule option: vehicule.getOptions()
+                 ) {
+                System.out.println("\t" + option.toString());
+            }
+        }
     }
 }

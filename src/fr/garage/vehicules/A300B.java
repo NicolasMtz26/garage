@@ -1,11 +1,5 @@
 package fr.garage.vehicules;
 
-import fr.garage.Marque;
-import fr.garage.OptionVehicule;
-import fr.garage.Vehicule;
-
-import java.util.ArrayList;
-
 public class A300B extends Vehicule {
 
 
@@ -14,6 +8,11 @@ public class A300B extends Vehicule {
         setMarque(Marque.PIGEOT);
         setModele("A300B");
         setPrice(10);
+    }
+
+    @Override
+    public String klaxon() {
+        return "pouetpouet";
     }
 //
 //    public A300B(Marque marque, String modele, double price) {
